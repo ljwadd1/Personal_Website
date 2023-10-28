@@ -1,0 +1,417 @@
+html {
+    background-image: linear-gradient(#FF9999, #FFEBCC);
+    scroll-behavior: smooth;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+}  
+
+/* (#F88B96, #FFEFEF); */
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url(images/clarinet_headshot_no_bkg.png); */
+    background: url("https://placehold.co/500x500");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+.hero-image {
+    position: relative;
+    top: 0;
+    left: 30%;
+
+}
+
+#clarinet-photo {
+    height: 100vh;
+    width: auto;
+    padding-right: 30vw;
+    filter: brightness(80%);
+    z-index: 2;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 3;
+}
+
+#hero-space {
+    height: 30vh;
+}
+
+h2.hero {
+    padding: 1em 0;
+    margin-bottom: 0;
+}
+
+.bottom-slide {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+    border-bottom: 2px solid darkgrey;
+    background-color: #fff8ed;
+}
+
+.sticky-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #FFDDCC;
+    z-index: 10;
+    
+}
+
+.sticky-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+
+.nav-link:hover {
+    color: white;
+    background: #FAB0B6;
+    transition: all 0.5s ease;
+}
+
+.nav-menu-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #e85261;
+    transition: left 0.3s ease;
+ }
+
+button, input, textarea {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+}
+
+#cta-button {
+    width: 40%;
+    max-width: 100px;
+    height: auto;
+    align-self: center;
+}
+
+a:link {
+    color: #D23544;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #D23544;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    max-width: 100%;
+    height: auto;
+}
+
+#header-top {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ba4b5a;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    height: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+#header-img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* #nav-bar {
+    max-width: 100%;
+    height: 3.5em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #D23544;
+    background-color: #FFEFEF;
+    font-weight: 600;
+    gap: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    padding: 0;
+    z-index: 1000;
+    
+} */
+
+/* .nav-link {
+    font-weight: 600;
+    gap: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* .nav-menu-slider {
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: blue;
+    transition: left 0.3s ease;
+} */
+
+/* .highlight-background {
+    background-color: blue;
+} */
+
+/* #hero-section {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background-image: url("https://placehold.co/500x500");
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+}
+
+#hero-space {
+    height: 3em;
+}
+
+h2.hero {
+    padding: 1em 0;
+} */
+
+/* .main-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    border-bottom: 2px solid darkgrey;
+    background-color: white;
+} */
+
+h2 {
+    text-align: center;
+}
+
+#mission-vision {
+    padding: 2vw;
+}
+
+#mission-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#vision-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img.mv-img {
+    border-radius: 50%;
+}
+
+/* .img-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#resume-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+} */
+
+p {
+    margin: 10px;
+}
+
+
+#contact-form {
+    width: 100%;
+    max-width: 1000px;
+    align-self: center;
+}
+
+.form-control {
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: auto;
+    padding: 10px 0 3px;
+}
+
+#email-textbox {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: left;
+    resize: vertical;
+}
+
+.submit-button {
+    margin: 20px auto;
+    display: block;
+    width: 25%;
+    min-width: 100px;
+    height: 2em;
+    font-size: 16px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+#topButton {
+    position: fixed; 
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #FAB0B6;
+    color: #D23544;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+@media screen and (max-width: 480px) {
+
+    a {
+        font-size: 11px;
+    }
+
+    .main-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+        box-sizing: border-box;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #resume-img {
+        width: 100%;
+        /* max-width: 300px; */
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    .img-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #resume-img {
+        max-width: 100%;
+        height: auto;
+        /* width: 100%; */
+        /* height: auto; */
+        /* align-self: stretch; */
+        
+    }
+
+}
